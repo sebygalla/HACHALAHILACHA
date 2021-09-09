@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -67,8 +69,8 @@ body {
 
 
 .lista-enlaces-item {
-	font-size: 16px;
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 500;
 	text-decoration: none;
 	color: white;
 	padding: 20px;
@@ -143,13 +145,16 @@ body {
 	font-size: 45px;
 	font-weight: 900;
 	line-height: 45px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
 
 }
 
 .textos-hero h3 {
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: 600;
 	color: #eb2f06;
+	font-family: 'Roboto', sans-serif;
 
 }
 
@@ -194,13 +199,49 @@ body {
 
 
 
+/*Nosotros*/
+
+.container-nosotros{
+	display: flex;
+	max-width: 992px;
+	margin: 80px auto;
+	font-family: 'Roboto', sans-serif;
+	align-items: center;
+	justify-content: center;
+	text-align: justify;
+	position: relative;
+}
+
+
+
+.container-nosotros h1{
+	font-size: 60px;
+	text-align: center;
+	margin: 100px 0px 10px 0px;
+	
+
+}
+
+.container-nosotros h2{
+	font-size: 35px;
+	text-align: center;
+	
+}
+
+.container-nosotros p{
+	font-size: 20px;
+	margin: 10px;
+}
+
+
+
+
 /*Cards*/
 
 
 .container_cards {
-	max-width: 1200px;
-	margin: auto;
-	margin-top: 100px;
+	
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -442,14 +483,14 @@ body {
 }
 
 .link-flex_footer h1{
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
 
 .lista-enlaces-item_footer {
 	
-	font-size: 20px;
+	font-size: 15px;
 	color: black;
 	text-decoration: none;
 	
@@ -486,14 +527,14 @@ body {
 }
 
 .nav-redes_footer h1{
-	font-size: 28px;
+	font-size: 22px;
 	text-align: center;
 	font-weight:bold;
 	margin-bottom: 10px;
 	
 }
 .nav-redes_footer p{
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
 }
 
@@ -542,6 +583,7 @@ body {
 
 .nav-logo_footer img {
 	width: 100px;
+	
 	
 	
 }
