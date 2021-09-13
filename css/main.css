@@ -1109,7 +1109,7 @@ body {
 			background-color: #67cd00;
 			align-items: center;
 			justify-content: center;
-			border-radius: 25px;
+			
 		}
 
 
@@ -1117,7 +1117,7 @@ body {
 			width: 60vw;
 			height: 50vh;
 			background: url(../img/pixel\ logo.jpg);
-			background-size: 350px;
+			background-size: 280px;
 			justify-content: center;
 			align-items: center;
 			overflow:hidden;
