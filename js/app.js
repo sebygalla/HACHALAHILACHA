@@ -1,4 +1,4 @@
-/* Menu desplegable*/
+/* MENU DESPLEGABLE*/
 
 const navToggle = document.querySelector('.toggle');
 const navEnlace = document.querySelector('.lista-enlaces');
@@ -9,11 +9,14 @@ navToggle.addEventListener("click", () => {
 
 
 
-/*Parallax*/
+/*PARALLAX*/
 
+/*Primer paso carga windows y luego ejecuta la funcion*/
 window.onload = () => {
+    /*crea la variable image*/
     let image = document.querySelector('.img_nosotros');
 
+    /*agregamos a window el evento scroll y una funcion  la cual modifica estilos de css*/
 
     window.addEventListener('scroll', (e) => {
         let scroll = window.scrollY;
