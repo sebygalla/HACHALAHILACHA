@@ -29,7 +29,7 @@ body {
 
 .nav-logo img {
 
-	width: 50px;
+	width: 40px;
 	margin-left: 20px;
 
 }
@@ -44,7 +44,7 @@ body {
 	display: flex;
 	background: black;
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	justify-content: space-evenly;
 	position: fixed;
 	top: 0;
@@ -77,7 +77,7 @@ body {
 
 
 .lista-enlaces-item {
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	text-decoration: none;
 	color: white;
@@ -97,7 +97,7 @@ body {
 }
 
 .nav-redes a {
-	font-size: 20px;
+	font-size: 16px;
 	color: white;
 	margin: 5px;
 	padding: 2px;
@@ -282,9 +282,9 @@ body {
 
 .img_nosotros {
 	width: 40vw;
-	height: 60vh;
+	height: 50vh;
 	background: url(/img/guitarra.jpg);
-	background-size: 750px;
+	background-size: 700px;
 	overflow: hidden;
 	padding: 20px 20px;
 
@@ -734,6 +734,9 @@ body {
 
 	}
 
+	
+
+
 
 
 
@@ -931,9 +934,9 @@ body {
 
 
 		.textos-hero h1 {
-			font-size: 30px;
+			font-size: 50px;
 			font-weight: 900;
-			line-height: 28px;
+			line-height: 35px;
 			text-align: center;
 			order: 0;
 
@@ -941,7 +944,7 @@ body {
 
 		.textos-hero h3 {
 			font-size: 20px;
-			font-weight: 900;
+			font-weight: 600;
 			color: #eb2f06;
 			margin-top: 5px;
 			order: 0;
@@ -1081,7 +1084,7 @@ body {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 			/*border-radius: 15px;*/
-			background-color: #67cd00;
+			background-color: black;
 			width: 100%;
 			height: 80vh;
 			margin-top: 50px;
@@ -1100,7 +1103,7 @@ body {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			background-color: #67cd00;
+			background-color: black;
 			
 		
 		}
@@ -1122,7 +1125,7 @@ body {
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
-			background-color: #67cd00;
+			background-color: black;
 			align-items: center;
 			justify-content: center;
 			
@@ -1130,13 +1133,14 @@ body {
 
 
 		.img_nosotros {
-			width: 60vw;
-			height: 50vh;
-			background: url(../img/pixel\ logo.jpg);
-			background-size: 280px;
-			justify-content: center;
-			align-items: center;
-			overflow:hidden;
+			width: 50vw;
+			height: 40vh;
+			background: url(/img/carrusel\ 2.jpg);
+			background-size: 400px;
+			justify-content:center;
+			align-items:center;
+			background-repeat:initial;
+		
 			
 
 		}
@@ -1178,6 +1182,11 @@ body {
 
 		/* Titulo portada*/
 
+		.hero-main{
+			height: 65vh;
+		}
+
+
 		.textos-hero {
 			display: flex;
 			flex-direction: column;
@@ -1187,40 +1196,7 @@ body {
 			order: 2;
 			margin-left: 0px;
 			padding: 15px;
-
-		}
-
-		
-		.textos-hero h1 {
-			font-size: 65px;
-			font-weight: 900;
-			line-height: 45px;
-			font-family: 'Roboto', sans-serif;
-			letter-spacing: 2px;
-			-webkit-text-stroke: 2px black;
-			color: white; 
-
-		}
-
-
-
-		.textos-hero h1 {
-			font-size: 30px;
-			font-weight: 900;
-			line-height: 28px;
-			text-align: center;
-			order: 0;
-			-webkit-text-stroke: 1px black;
-			color: white; 
-
-		}
-
-		.textos-hero h3 {
-			font-size: 20px;
-			font-weight: 400;
-			color: #eb2f06;
-			margin-top: 5px;
-			order: 0;
+			margin-top: -35px;
 
 		}
 
@@ -1238,6 +1214,32 @@ body {
 			font-size: 14px;
 			order: 4;
 		}
+
+		.textos-hero h1 {
+			font-size: 30px;
+			font-weight:900;
+			line-height: 30px;
+			font-family: 'Roboto', sans-serif;
+			letter-spacing: 1px;
+			-webkit-text-stroke: 1.2px black;
+			text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
+			color: white; 
+		
+		}
+		
+		.textos-hero h3 {
+			font-size: 20px;
+			font-weight: 400;
+			margin-top: 5px;
+			color: red;
+			letter-spacing: -1px;
+			text-shadow:  2px 2px 2px rgba(0, 0, 0, 0.247) ;
+			font-family: 'Roboto', sans-serif;
+		
+		}
+
+
+	
 
 
 		.img-hero img {
@@ -1324,11 +1326,6 @@ body {
 		}
 
 
-
-
-
-
-
 		/* Titulo portada*/
 
 		.textos-hero_nosotros {
@@ -1340,29 +1337,7 @@ body {
 		
 		}
 
-		.textos-hero h1 {
-			font-size: 30px;
-			font-weight:900;
-			line-height: 30px;
-			font-family: 'Roboto', sans-serif;
-			letter-spacing: 1px;
-			-webkit-text-stroke: 1.5px black;
-			text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.253);
-			color: white; 
-		
-		}
-		
-		.textos-hero h3 {
-			font-size: 20px;
-			font-weight: 600;
-			margin-top: 5px;
-			color: red;
-			letter-spacing: -1px;
-			box-shadow:  2px black ;
-			font-family: 'Roboto', sans-serif;
-		
-		}
-
+	
 		.textos-hero_nosotros p {
 			font-size: 8px;
 			padding: 30px;
@@ -1401,6 +1376,7 @@ body {
 
 		/*Fin Prueba nosotros*/
 
+	
 
 
 
