@@ -300,14 +300,21 @@ body {
 /*Nosotros*/
 
 .container-nosotros {
-	display: flex;
+	/*display: flex;
+	flex-wrap: wrap;*/
+	
+	width: 100%;
 	max-width: 992px;
 	margin: 80px auto;
 	font-family: 'Roboto', sans-serif;
-	align-items: center;
-	justify-content: center;
+	border-top: 2px solid black;
+	/*align-items: center;
+	justify-content: center;*/
 	text-align: justify;
 	position: relative;
+	
+	
+
 }
 
 
@@ -326,10 +333,51 @@ body {
 
 }
 
-.container-nosotros p {
-	font-size: 15px;
-	margin: 10px;
+.nosotros-description P{
+	z-index: 999;
 }
+
+.nosotros-description h1{
+	font-size: 150px;
+	margin: 15px;
+	
+}
+
+.nosotros-description i{
+	font-size: 60px;
+	
+}
+
+.nosotros-description h2{
+	font-size: 18px;
+	margin: 18px;
+	text-align:center;
+	color: rgb(212, 208, 208);
+}
+
+.nosotros-description strong{
+	color: black;
+	font-size: 18px;
+}
+
+
+/*Banner nosotros*/
+
+
+.imagen-banda img{
+	width: 100%;
+	max-width: 400px;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 20px;
+
+
+
+	
+
+}
+
+
 
 
 
@@ -395,15 +443,15 @@ body {
 }
 
 .card:nth-of-type(1) .img__back {
-	background-image: url(../img/bg3.jpg);
+	background-color: rgba(128, 128, 128, 0.281);
 }
 
 .card:nth-of-type(2) .img__back {
-	background-image: url(../img/bg3.jpg);
+	background-color: rgba(128, 128, 128, 0.281);
 }
 
 .card:nth-of-type(3) .img__back {
-	background-image: url(../img/bg3.jpg);
+	background-color: rgba(128, 128, 128, 0.281);
 }
 
 .card .description {
@@ -432,7 +480,10 @@ body {
 	padding: 10px 40px;
 	margin-top: 20px;
 	border: none;
-	background: #a63590;
+	background: #ee0979;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	color: white;
 	font-size: 14px;
 	font-weight: 700;
@@ -444,7 +495,7 @@ body {
 }
 
 .card .description input:hover {
-	background: #83277b;
+	background: #f80e2dd5;
 
 }
 
@@ -457,14 +508,20 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
-	margin: 150px auto;
+	margin-top: -20px;
+	margin-bottom: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 1200px;
 }
 
 .card--perfil {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	width: 300px;
-	height: 500px;
-
+	height: 450px;
 	text-align: center;
 	box-shadow: 2px 2px 5px rgb(201, 201, 201);
 
@@ -478,6 +535,11 @@ body {
 	margin: 10px 0px 0px 0px;
 }
 
+.card--info p{
+	font-size: 12px;
+	text-align: justify;
+}
+
 .card--nombre {
 	display: flex;
 	flex-direction: column;
@@ -487,9 +549,10 @@ body {
 }
 
 .card--nombre h2 {
-	font-size: 25px;
-	font-weight: bold;
-	margin: 10px 0px 0px 0px;
+	font-size: 20px;
+	font-weight: 900;
+	margin: 30px 0px 0px 0px;
+	
 
 
 }
@@ -498,13 +561,14 @@ body {
 	width: 250px;
 	margin-top: 20px;
 	box-shadow: 2px 2px 5px rgb(128, 125, 125);
-
+	transition: 0.1s ease-out;
 
 
 }
 
 .card--nombre img:hover {
 	transform: translateY(-5px);
+	width: 260px;
 
 }
 
@@ -513,14 +577,18 @@ body {
 	padding: 10px;
 	margin: 20px;
 	border: none;
-	background: #a63590;
-	font-size: 15px;
-	font-weight: 700;
+	background: #ee0979;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	font-size: 12px;
+	font-weight: 600;
 	cursor: pointer;
 	border-radius: 8px;
 	transition: all 300ms;
 	width: 100px;
 	height: auto;
+	
 
 }
 
@@ -528,7 +596,35 @@ body {
 	color: white;
 	text-decoration: none;
 
+
 }
+
+
+
+/*Banner*/
+
+.banner{
+	width: 100%;
+	height: 140px;
+	background: #ee0979;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	position: relative;
+}
+
+.cassette-banner img{
+	width: 350px;
+	position: absolute;
+	top: -220px;
+
+
+}
+
+
+
+
+
 
 
 /*Footer*/
@@ -661,6 +757,8 @@ body {
 
 
 }
+
+
 
 .link-flex_footer {
 	display: flex;
@@ -1255,7 +1353,7 @@ body {
 
 		.container-nosotros {
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			max-width: 270px;
 			margin: 80px auto;
 			font-family: 'Roboto', sans-serif;
@@ -1268,9 +1366,10 @@ body {
 
 
 		.container-nosotros h1 {
-			font-size: 40px;
+			font-size: 20px;
+			font-weight: 900;
 			text-align: center;
-			margin: 40px 0px 10px 0px;
+			margin: 40px 0px 20px 0px;
 
 
 		}
@@ -1282,7 +1381,7 @@ body {
 		}
 
 		.container-nosotros p {
-			font-size: 16px;
+			font-size: 10px;
 			margin: 20px;
 		}
 
@@ -1304,6 +1403,18 @@ body {
 		.nosotros-description h1{
 			margin-top: 80px ;
 
+		}
+
+		/*Banner nosotros*/
+		.imagen-banda{
+			margin-top: -40px;
+		}
+
+
+		.imagen-banda img{
+			width: 100vw;
+			max-width: 290px;
+			margin: 80px auto;
 		}
 
 
