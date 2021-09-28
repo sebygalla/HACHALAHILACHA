@@ -1519,6 +1519,29 @@ body {
 		
 		}
 
+		.btn-arriba {
+			font-size: 20px;
+			color: white;
+		    padding: 7px 11px;
+			border-radius: 100%;
+			cursor: pointer;
+			position: fixed;
+			bottom: 30px;
+			right: 10px;
+			background: red;
+			z-index: 999;
+			border: none;
+			/*transform: translateY(100px);*/
+			transform: scale(0);
+			transition: 0.3s; 
+		}
+		
+		.btn-arriba-on{
+			/*transform: translate(0);*/
+			transform: scale(1);
+		}
+		
+
 
 
 
