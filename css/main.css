@@ -318,14 +318,26 @@ body {
 
 /*Boton ir arriba*/
 
-.btn-arriba i{
-	font-size: 50px;
-	color: rgb(224, 191, 191);
-	padding: 10px;
+.btn-arriba {
+	font-size: 30px;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 100%;
+	cursor: pointer;
 	position: fixed;
+	bottom: 20px;
 	right: 20px;
-	background-color: #eb2f06;
+	background: red;
+	z-index: 999;
+	border: none;
+	/*transform: translateY(100px);*/
+	transform: scale(0);
+	transition: 0.3s; 
+}
 
+.btn-arriba-on{
+	/*transform: translate(0);*/
+	transform: scale(1);
 }
 
 

@@ -28,3 +28,30 @@ window.onload = () => {
 
 }
 
+/*ir arriba*/
+
+
+
+/*obtengo el elemento */
+const btn_arriba = document.getElementById('btn_arriba');
+btn_arriba.addEventListener('click', () => {
+    window.scrollTo(0,0) /*cuando el scroll esta pegado arriba*/
+
+
+})
+
+window.onscroll=()=>{
+    add_btn_arriba()
+    }
+
+    const add_btn_arriba = () => {
+        if(window.scrollY < 400) {
+        btn_arriba.classList.remove("btn-arriba-on")}
+        else { btn_arriba.classList.add("btn-arriba-on")
+        }
+    }
+    
+
+
+
+
