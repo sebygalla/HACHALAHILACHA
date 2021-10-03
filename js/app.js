@@ -15,6 +15,7 @@ navToggle.addEventListener("click", () => {
 
 links.addEventListener('click', ()=>{
     navEnlace.classList.remove("lista-enlaces_visible");
+    
 })
 
 
@@ -48,7 +49,7 @@ const btn_arriba = document.getElementById('btn_arriba');
 
 
 btn_arriba.addEventListener('click', () => {
-    window.scrollTo(0,0) /*cuando el scroll esta pegado arriba*/
+    window.scrollTo(0,0) 
 
 
 })
@@ -65,7 +66,8 @@ window.onscroll=()=>{
         else { btn_arriba.classList.add("btn-arriba-on")
         }
     }
-       
+
+   
 
 
 
