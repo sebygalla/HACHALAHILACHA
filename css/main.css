@@ -78,7 +78,7 @@ body {
 
 .lista-enlaces-item {
 	font-size: 12px;
-	font-weight: 500;
+	font-weight: 600;
 	text-decoration: none;
 	color: white;
 	padding: 20px;
@@ -98,6 +98,7 @@ body {
 
 .nav-redes a {
 	font-size: 16px;
+
 	color: white;
 	margin: 5px;
 	padding: 2px;
@@ -1475,19 +1476,22 @@ body {
 			background-color: black;
 			align-items: center;
 			justify-content: center;
+			margin-top: 20px;
 
 
 		}
 
 
 		.img_nosotros {
-			width: 90vw;
-			height: 35vh;
-			background: url(/img/carrusel\ 2.jpg);
-			background-size: 400px;
+			width: 100vw;
+			height: 40vh;
+			background: url(/img/banner.jpg);
+			background-size: 350px;
 			justify-content: center;
 			align-items: center;
-			background-repeat: initial;
+			background-repeat:repeat;
+			
+			
 
 
 
